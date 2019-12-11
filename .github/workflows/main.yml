@@ -1,0 +1,20 @@
+name: Build and Deploy
+on:
+  push:	
+    branches:	
+      - master
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v1
+
+    - name: Build and Deploy
+      uses: JamesIves/github-pages-deploy-action@releases/v2
+      env:
+        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        BASE_BRANCH: master
+        BRANCH: gh-pages
+        FOLDER: public 
+        BUILD_SCRIPT: npm install && npm run build && mkdir public && rm -f node_modules/term-size/vendor/windows/term-size.exe && cp -R node_modules public && cp custom.css public/custom.css && cp slides.html public/index.html && touch public/.nojekyll
