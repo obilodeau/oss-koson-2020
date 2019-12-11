@@ -1,4 +1,4 @@
-= OOS en Entreprise
+= OSS en Entreprise
 :imagesdir: images
 :source-highlighter: highlightjs
 :revealjs_theme: white
