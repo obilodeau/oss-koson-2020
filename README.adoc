@@ -1,10 +1,10 @@
-= Presentation Clisthène Bordeaux
+= Touraine Tech 2020 : OSS en Entreprise
 
 == Tools
 
 Based on https://github.com/asciidoctor/asciidoctor-reveal.js
 
-Pre-requisites:: `npx`
+Pre-requisites:: `npm`
 
 .Generates HTML slides, opens browser
 [source, bash]
