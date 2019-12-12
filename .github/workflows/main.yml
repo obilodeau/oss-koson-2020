@@ -17,4 +17,4 @@ jobs:
         BASE_BRANCH: master
         BRANCH: gh-pages
         FOLDER: public 
-        BUILD_SCRIPT: npm install && npm run build && mkdir public && rm -f node_modules/term-size/vendor/windows/term-size.exe && cp -R node_modules public && cp custom.css public/custom.css && cp slides.html public/index.html && touch public/.nojekyll
+        BUILD_SCRIPT: npm install && npm run build && mkdir public && rm -f node_modules/term-size/vendor/windows/term-size.exe && cp -R node_modules public && cp -R cssimages public && cp custom.css public/custom.css && cp slides.html public/index.html && touch public/.nojekyll
