@@ -1,4 +1,4 @@
-= Touraine Tech 2020 : OSS en Entreprise
+= OSS en Entreprise
 
 == Tools
 
