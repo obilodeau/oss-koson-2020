@@ -8,5 +8,15 @@
 :customcss: custom.css
 :data-uri:
 :icons: font
+:conf-pic: tourainetech.svg
 
-== Koson
+images::{conf-pic}[float="right"]
+
+== Qui je suis ?
+
+icon:twitter[] @NicolasComet +
+icon:github[] https://github.com/ncomet +
+
+image::images/lectra.png[]
+
+image::images/lectra-versalis.jpg[versalis, 800]
