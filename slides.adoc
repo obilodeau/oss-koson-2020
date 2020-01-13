@@ -1,4 +1,4 @@
-= OSS en Entreprise
+= OSS en Entreprise, causons peu, Koson bien !
 :imagesdir: images
 :source-highlighter: highlightjs
 :revealjs_theme: white
