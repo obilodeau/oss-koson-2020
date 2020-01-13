@@ -17,6 +17,6 @@ images::{conf-pic}[float="right"]
 icon:twitter[] @NicolasComet +
 icon:github[] https://github.com/ncomet +
 
-image::images/lectra.png[]
+image::lectra.png[]
 
-image::images/lectra-versalis.jpg[versalis, 800]
+image::lectra-versalis.jpg[versalis, 800]
