@@ -30,10 +30,15 @@ image::lectra-versalis.jpg[width=50%]
 
 [%step]
 * C'est gratuit !
+[%step]
 ** "Free as in free speech, not free beer" _R. Stallman_
 ** Possible de créer un modèle économique, ou pas
 * Pas -ou peu- de support
 * Pas sécurisé
+
+== Gratuit.
+
+image::enquetePAC2017.png[width=75%]
 
 [%notitle]
 == Contributeurs bruts
@@ -44,17 +49,27 @@ image::contribution-2018.png[background, size=contain]
 
 [source, bash]
 ----
-1.  Mozilla             39.9%
-2.  Pivotal             18.27%
-3.  SUSE                17.64%
-4.  Red Hat             12.68%
-5.  Unity Technologies  12.9%
-6.  Square              11.25%
-7.  Thoughtworks         8.28%
-8.  Shopify              7.67%
-9.  ESRI                 6.87%
-10. Microsoft            3.1%
+1.  Mozilla             39.90%  (1 000+)
+2.  Pivotal             18.27%  (3 000)
+3.  SUSE                17.64%  (1 500)
+4.  Red Hat             12.68%  (13 400)
+5.  Unity Technologies  12.90%  (2 000+)
+6.  Square              11.25%  (3 400)
+7.  Thoughtworks         8.28%  (6 000+)
+8.  Shopify              7.67%  (4 000+)
+9.  ESRI                 6.87%  (3 800+)
+10. Microsoft            3.10%  (150 000)
 ----
+
+== Sécurité vs. contamination
+
+image::licences.png[]
+
+== Reality check
+
+_Votre entreprise IT n'existe que grâce à l'Open Source_
+
+(de manière directe ou indirecte)
 
 [%notitle]
 == Koson
@@ -69,7 +84,7 @@ icon:github[].com/lectra-tech/koson +
 
 image::live.gif[width=50%]
 
-== Usage
+== Définition
 
 [source, kotlin]
 ----
@@ -83,7 +98,7 @@ val obj = obj {
 }
 ----
 
-== Usage
+== Sérialisation
 
 [source, json]
 ----
@@ -92,36 +107,6 @@ val obj = obj {
 {"key":3.4,"anotherKey":["test","test2",1,2.433,true] ... }
 ----
 
-[source, json]
-----
-// println(obj.pretty())
+== Maven Central
 
-{
-  "key": 3.4,
-  "anotherKey": [
-    "test",
-    "test2",
-    1,
-    2.433,
-    true
-  ],
-  "nullValue": null,
-  "emptyObject": {},
-  "emptyArray": [],
-  "custom": "Tue Dec 11 13:14:14 CET 2018"
-}
-----
-
-== Rendering
-
-[source, kotlin]
-----
-// "compact", single line mode
-obj { ... }
-
-// 2 whitespace tabulations
-obj { ... }.pretty()
-
-// 3 whitespace tabulations
-arr[ ... ].pretty(3)
-----
+TODO
