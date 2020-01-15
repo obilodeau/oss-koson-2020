@@ -18,6 +18,44 @@ image::lectra.png[width=30%]
 
 image::lectra-versalis.jpg[width=50%]
 
+== Comment faire de l'Open Source ?
+
+== En entreprise
+
+[%step]
+* Culture
+* Convaincre
+
+== Open Source ?
+
+[%step]
+* C'est gratuit !
+** "Free as in free speech, not free beer" _R. Stallman_
+** Possible de créer un modèle économique, ou pas
+* Pas -ou peu- de support
+* Pas sécurisé
+
+[%notitle]
+== Contributeurs bruts
+
+image::contribution-2018.png[background, size=contain]
+
+== Contributeurs/Salariés
+
+[source, bash]
+----
+1.  Mozilla             39.9%
+2.  Pivotal             18.27%
+3.  SUSE                17.64%
+4.  Red Hat             12.68%
+5.  Unity Technologies  12.9%
+6.  Square              11.25%
+7.  Thoughtworks         8.28%
+8.  Shopify              7.67%
+9.  ESRI                 6.87%
+10. Microsoft            3.1%
+----
+
 [%notitle]
 == Koson
 
@@ -26,7 +64,6 @@ image::koson-logo-large.png[width=50%]
 Kotlin DSL icon:arrow-right[] icon:file-code-o[]
 
 icon:github[].com/lectra-tech/koson +
-
 
 == DSL
 
