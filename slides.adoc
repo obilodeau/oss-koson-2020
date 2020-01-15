@@ -1,4 +1,4 @@
-= OSS en Entreprise, causons peu, Koson bien !
+= OSS en Entreprise, Koson bien !
 :imagesdir: images
 :source-highlighter: highlightjs
 :revealjs_theme: white
@@ -14,6 +14,77 @@
 icon:twitter[] @NicolasComet +
 icon:github[] https://github.com/ncomet +
 
-image::lectra.png[width=40%]
+image::lectra.png[width=30%]
 
-image::lectra-versalis.jpg[width=40%]
+image::lectra-versalis.jpg[width=50%]
+
+[%notitle]
+== Koson
+
+image::koson-logo-large.png[width=50%]
+
+Kotlin DSL icon:arrow-right[] icon:file-code-o[]
+
+icon:github[].com/lectra-tech/koson +
+
+
+== DSL
+
+image::live.gif[width=50%]
+
+== Usage
+
+[source, kotlin]
+----
+val obj = obj {
+  "key" to 3.4
+  "anotherKey" to arr["test", "test2", 1, 2.433, true]
+  "nullValue" to null
+  "emptyObject" to obj { }
+  "emptyArray" to arr
+  "custom" to Date()
+}
+----
+
+== Usage
+
+[source, json]
+----
+// println(obj)
+
+{"key":3.4,"anotherKey":["test","test2",1,2.433,true] ... }
+----
+
+[source, json]
+----
+// println(obj.pretty())
+
+{
+  "key": 3.4,
+  "anotherKey": [
+    "test",
+    "test2",
+    1,
+    2.433,
+    true
+  ],
+  "nullValue": null,
+  "emptyObject": {},
+  "emptyArray": [],
+  "custom": "Tue Dec 11 13:14:14 CET 2018"
+}
+----
+
+== Rendering
+
+[source, kotlin]
+----
+// "compact", single line mode
+obj { ... }
+
+// 2 whitespace tabulations
+obj { ... }.pretty()
+
+// 3 whitespace tabulations
+arr[ ... ].pretty(3)
+----
