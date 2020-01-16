@@ -83,15 +83,13 @@ image::json.png[width=40%]
 
 image::koson-logo-large.png[width=50%]
 
-Kotlin DSL icon:arrow-right[] icon:file-code-o[]
-
 icon:github[].com/lectra-tech/koson +
 
 image::koson-qrcode.png[]
 
-== DSL
+== DSL Kotlin
 
-image::live.gif[width=50%]
+image::live.gif[width=60%]
 
 == Utilisation
 
@@ -140,6 +138,10 @@ println(obj.pretty())
 ----
 
 == Publication des artefacts
+
+`koson-1.0.4.jar` 
+
+*27 Ko*, Ø dépendance (runtime Kotlin)
 
 [%notitle]
 == npm
@@ -212,6 +214,8 @@ image::search.png[width=70%]
 image::os-att.jpg[width=70%]
 
 == Merci !
+
+slides & références
 
 https://ncomet.github.io/oss-koson-2020
 
