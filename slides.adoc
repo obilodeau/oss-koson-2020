@@ -93,7 +93,7 @@ image::koson-qrcode.png[]
 
 image::live.gif[width=50%]
 
-== Définition
+== Utilisation
 
 [source, kotlin]
 ----
@@ -105,18 +105,38 @@ val obj = obj {
   "emptyArray" to arr
   "custom" to Date()
 }
-----
 
-== Sérialisation
-
-[source, kotlin]
-----
 println(obj)
 ----
 
 [source, json]
 ----
 {"key":3.4,"anotherKey":["test","test2",1,2.433,true] ... }
+----
+
+== Pretty
+
+[source, kotlin]
+----
+println(obj.pretty())
+----
+
+[source, json]
+----
+{
+  "key": 3.4,
+  "anotherKey": [
+    "test",
+    "test2",
+    1,
+    2.433,
+    true
+  ],
+  "nullValue": null,
+  "emptyObject": { },
+  "emptyArray": [ ],
+  "custom": "Tue Dec 11 13:14:14 CET 2018"
+}
 ----
 
 == Publication des artefacts
