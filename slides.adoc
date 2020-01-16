@@ -109,10 +109,13 @@ val obj = obj {
 
 == Sérialisation
 
+[source, kotlin]
+----
+println(obj)
+----
+
 [source, json]
 ----
-// println(obj)
-
 {"key":3.4,"anotherKey":["test","test2",1,2.433,true] ... }
 ----
 
