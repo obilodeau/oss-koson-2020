@@ -61,7 +61,7 @@ image::contribution-2018.png[background, size=contain]
 10. Microsoft            3.10%  (150 000)
 ----
 
-== Sécurité ? Juridique ?
+== Sécurité ? Juridique.
 
 image::licences.png[]
 
