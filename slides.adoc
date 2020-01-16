@@ -5,6 +5,8 @@
 :revealjs_history: true
 :revealjs_plugin_pdf: enabled
 :revealjs_plugin_highlight: enabled
+:revealjs_slideNumber: true
+:revealjs_showSlideNumber: speaker
 :customcss: custom.css
 :data-uri:
 :icons: font
@@ -29,19 +31,18 @@ image::lectra-versalis.jpg[width=50%]
 == Open Source ?
 
 [%step]
-* C'est gratuit !
+* C'est gratuit...
 [%step]
 ** "Free as in free speech, not free beer" _R. Stallman_
-** Possible de créer un modèle économique, ou pas
 * Pas -ou peu- de support
 * Pas sécurisé
 
-== Gratuit.
+== Gratuit ?
 
 image::enquetePAC2017.png[width=75%]
 
 [%notitle]
-== Contributeurs bruts
+== Contributeurs
 
 image::contribution-2018.png[background, size=contain]
 
@@ -71,6 +72,12 @@ _Votre entreprise IT existe grâce à l'Open Source_
 
 (de manière directe ou indirecte)
 
+== L'histoire
+
+image::kotlin-springboot.png[width=50%]
+
+image::json.png[width=40%]
+
 [%notitle]
 == Koson
 
@@ -79,6 +86,8 @@ image::koson-logo-large.png[width=50%]
 Kotlin DSL icon:arrow-right[] icon:file-code-o[]
 
 icon:github[].com/lectra-tech/koson +
+
+image::koson-qrcode.png[]
 
 == DSL
 
@@ -109,4 +118,37 @@ val obj = obj {
 
 == Publication des artefacts
 
-Test
+[%notitle]
+== npm
+
+image::npm.png[width=30%]
+
+=
+
+image::easy.gif[width=70%]
+
+[%notitle]
+== maven central
+
+image::nexus.png[width=30%]
+
+=
+
+image::hard.gif[width=70%]
+
+== Maven Central
+
+.checklist
+[source, txt]
+----
+👉 Proof you own a domain (real company)
+✔️  Supply Javadoc & Sources
+✔️  Sign Files with GPG/PGP
+✔️  G.A.V.
+✔️  Metadata
+✔️  Licence info
+✔️  Developer(s) info
+✔️  SCM info
+🙁 First deployment is manual 
+----
+
