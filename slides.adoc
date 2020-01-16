@@ -163,7 +163,6 @@ image::hard.gif[width=70%]
 
 [source, txt]
 ----
-👉 Preuve détention du domaine
 ✅ G.A.V.
 ✅ Metadata
 ✅ Licence
@@ -171,7 +170,8 @@ image::hard.gif[width=70%]
 ✅ Infos SCM
 ✅ Fournir Javadoc & Sources
 ✅ Signer les fichiers par GPG/PGP
-🙁 Premier deploy manuel (par Sonatype) 
+🔍 Preuve détention du domaine
+🔍 Premier deploy manuel (par Sonatype) 
 ----
 
 https://central.sonatype.org/pages/ossrh-guide.html
