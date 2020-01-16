@@ -61,13 +61,13 @@ image::contribution-2018.png[background, size=contain]
 10. Microsoft            3.10%  (150 000)
 ----
 
-== Sécurité vs. contamination
+== Sécurité ? Juridique ?
 
 image::licences.png[]
 
 == Reality check
 
-_Votre entreprise IT n'existe que grâce à l'Open Source_
+_Votre entreprise IT existe grâce à l'Open Source_
 
 (de manière directe ou indirecte)
 
