@@ -10,6 +10,7 @@
 :customcss: custom.css
 :data-uri:
 :icons: font
+:revealjs_defaultTiming: 40
 
 == Qui je suis ?
 
