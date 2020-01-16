@@ -143,15 +143,15 @@ image::hard.gif[width=70%]
 
 [source, txt]
 ----
-👉 Proof you own a domain (real company)
-✔️  Metadata
-✔️  Licence info
-✔️  Developer(s) info
-✔️  SCM info
-✔️  Supply Javadoc & Sources
-✔️  G.A.V.
-✔️  Sign Files with GPG/PGP
-🙁 First deployment is manual 
+👉 Preuve détention du domaine
+✅ G.A.V.
+✅ Metadata
+✅ Licence
+✅ Infos Developpeur(s)
+✅ Infos SCM
+✅ Fournir Javadoc & Sources
+✅ Signer les fichiers par GPG/PGP
+🙁 Premier deploy manuel (par Sonatype) 
 ----
 
 https://central.sonatype.org/pages/ossrh-guide.html
