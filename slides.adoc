@@ -138,7 +138,6 @@ image::hard.gif[width=70%]
 
 == Maven Central
 
-.checklist
 [source, txt]
 ----
 👉 Proof you own a domain (real company)
@@ -152,3 +151,18 @@ image::hard.gif[width=70%]
 🙁 First deployment is manual 
 ----
 
+https://central.sonatype.org/pages/ossrh-guide.html
+
+== Quand c'est fait
+
+image::search.png[width=70%]
+
+== Publiez, contribuez !
+
+image::os-att.jpg[width=70%]
+
+== Merci !
+
+https://ncomet.github.io/oss-koson-2020
+
+image::slides-qrcode.png[]
