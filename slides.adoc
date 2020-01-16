@@ -2,6 +2,7 @@
 :imagesdir: images
 :source-highlighter: highlightjs
 :revealjs_theme: white
+:revealjs_defaultTiming: 40
 :revealjs_history: true
 :revealjs_plugin_pdf: enabled
 :revealjs_plugin_highlight: enabled
@@ -10,7 +11,6 @@
 :customcss: custom.css
 :data-uri:
 :icons: font
-:revealjs_defaultTiming: 40
 
 == Qui je suis ?
 
