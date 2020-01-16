@@ -153,6 +153,33 @@ image::hard.gif[width=70%]
 
 https://central.sonatype.org/pages/ossrh-guide.html
 
+[%notitle]
+== CI
+
+..travis.yml
+[source, yaml]
+----
+language: java
+jdk: openjdk12
+
+before_deploy:
+  - echo $GPG_SECRET_KEYS | base64 --decode | gpg --import
+  - echo $GPG_OWNERTRUST | base64 --decode | gpg --import-ownertrust
+  - cp .travis.settings.xml $HOME/.m2/settings.xml
+  - mvn -B -DskipTests=true clean deploy -Prelease
+
+deploy:
+  - provider: releases
+    api_key: "${GITHUB_TOKEN}"
+    file_glob: true
+    file: target/*.jar
+    skip_cleanup: true
+    on:
+      repo: "${TRAVIS_REPO_SLUG}"
+      branch: master
+      tags: true
+----
+
 == Quand c'est fait
 
 image::search.png[width=70%]
