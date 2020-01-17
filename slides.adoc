@@ -84,17 +84,15 @@ image::json.png[width=40%]
 
 image::koson-logo-large.png[width=50%]
 
-Kotlin DSL icon:arrow-right[] icon:file-code-o[]
-
 icon:github[].com/lectra-tech/koson +
 
 image::koson-qrcode.png[]
 
-== DSL
+== DSL Kotlin
 
-image::live.gif[width=50%]
+image::live.gif[width=60%]
 
-== Définition
+== Utilisation
 
 [source, kotlin]
 ----
@@ -106,12 +104,7 @@ val obj = obj {
   "emptyArray" to arr
   "custom" to Date()
 }
-----
 
-== Sérialisation
-
-[source, kotlin]
-----
 println(obj)
 ----
 
@@ -120,7 +113,36 @@ println(obj)
 {"key":3.4,"anotherKey":["test","test2",1,2.433,true] ... }
 ----
 
+== Pretty
+
+[source, kotlin]
+----
+println(obj.pretty())
+----
+
+[source, json]
+----
+{
+  "key": 3.4,
+  "anotherKey": [
+    "test",
+    "test2",
+    1,
+    2.433,
+    true
+  ],
+  "nullValue": null,
+  "emptyObject": { },
+  "emptyArray": [ ],
+  "custom": "Tue Dec 11 13:14:14 CET 2018"
+}
+----
+
 == Publication des artefacts
+
+`koson-1.0.4.jar` 
+
+*27 Ko*, Ø dépendance (runtime Kotlin)
 
 [%notitle]
 == npm
@@ -144,15 +166,15 @@ image::hard.gif[width=70%]
 
 [source, txt]
 ----
-👉 Proof you own a domain (real company)
-✔️  Metadata
-✔️  Licence info
-✔️  Developer(s) info
-✔️  SCM info
-✔️  Supply Javadoc & Sources
-✔️  G.A.V.
-✔️  Sign Files with GPG/PGP
-🙁 First deployment is manual 
+✅ G.A.V.
+✅ Metadata
+✅ Licence
+✅ Infos Developpeur(s)
+✅ Infos SCM
+✅ Fournir Javadoc & Sources
+✅ Signer les fichiers par GPG/PGP
+🔍 Preuve détention du domaine
+🔍 Premier deploy manuel (par Sonatype) 
 ----
 
 https://central.sonatype.org/pages/ossrh-guide.html
@@ -193,6 +215,8 @@ image::search.png[width=70%]
 image::os-att.jpg[width=70%]
 
 == Merci !
+
+slides & références
 
 https://ncomet.github.io/oss-koson-2020
 
